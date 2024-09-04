@@ -1,144 +1,104 @@
 
-
-/* HERO */
-
 .hero{
-    width: 100%;
-    height: 130vh;
-    background-image:radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.387), rgb(0, 0, 0)), url(../img/index-hero.webp);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: flex;
-    align-items: end;
+    background-color: var(--pink-tint);
+    color: var(--purple-shade);
 }
 
+/* hero tt */
+
 .hero__tt{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    width: 100%;
-    padding: 50px 50px 35vh 50px;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+    text-align: center;
 }
 
 .hero__tt h1{
-    max-width: 900px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 800px){
-    .hero{
-        height: 70vh;
-    }
-    .hero__tt{
-        flex-direction: column;
-        align-items: start;
-        gap: 20px;
-        padding: 0px 10px 80px 10px;
-    }
-    .hero__tt h1{
-        font-size: 1.5rem;
-    }
-    
+.hero picture{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-color: red;
+}
+
+.hero picture img{
+    width: 100%;
+}
+
+/* ARCO PICTURE SZS */
+
+.hero picture img:nth-child(1){
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 40;
+    transform: rotate(180deg);
+}
+.hero picture img:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+}
+
+.hero picture img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* DESCRIPTION */
 
 .description{
-    position: relative;
-    background-color: var(--blue-tint);
+    padding-top: 120px;
+    background-color: var(--pink-tint);
 }
 
-.description svg{
-    position: absolute;
-    bottom: 99%;
-}
-
-.description__tt{
-    position: relative;
-    text-align: center;
-    max-width: 800px;
+.descrption__width{
+    max-width: 1680px;
+    padding: 0px 20px;
     margin: 0 auto;
-    z-index: 20;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 
-.description__tt h1,
-.description__tt p{
+.descrption__tt h1,
+.descrption__tt p{
     margin-bottom: 20px;
 }
 
-.description picture{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-
 .description picture img{
-    position: absolute;
-    animation: descrption__img 8s infinite;
+    width: 100%;
 }
 
-.description picture img:nth-child(1){
-    left: 20%;
-    rotate: 10deg;
-}
-.description picture img:nth-child(2){
-    animation: descrption__img 8s infinite alternate-reverse;
-    left: 40%;
-    top: -50%;
-}
-.description picture img:nth-child(3){
-    bottom: -30%;
-    left: 30%;
-    rotate: -20deg;
-}
-.description picture img:nth-child(4){
-    animation: descrption__img 8s infinite alternate-reverse;
-    bottom: -10%;
-    left: 70%;
-    rotate: 20deg;
-}
-.description picture img:nth-child(5){
-    top: -30%;
-    left: 60%;
-    rotate: 40deg;
+@media screen and (max-width: 900px){
+    .hero__tt{
+        padding: 100px 10px 20px 10px;
+    }
+    .hero picture{
+        height: 50vh;
+    }
+    .description{
+        padding-top: 40px;
+    }
+    .descrption__width{
+        padding: 0px 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
 }
 
-@keyframes descrption__img {
-    0%, 100%{
-        transform: translateY(-10px);
-    }
-    50%{
-        transform: translateY(20px) rotate(-5deg);
-    }   
-}
-
-@media screen and (max-width: 800px){
-    .description picture img{
-        width: 10vw;
-    }
-    .description picture img:nth-child(1){
-        left: -20px;
-    }
-    .description picture img:nth-child(2){
-        top: -20%;
-        left: 20%;
-    }
-    .description picture img:nth-child(3){
-        bottom: 10%;
-        left: 25%;
-    }
-    .description picture img:nth-child(4){
-        bottom: 10%;
-        left: 80%
-    }
-}
 
 /* PRODUCTOS */
 
 .productos{
     padding: 120px 20px 0px 20px;
-    background: linear-gradient(to top, var(--pink-tint), var(--pink-tint), var(--blue-tint));
+    background: linear-gradient(to bottom, var(--pink-tint), var(--pink-tint), var(--blue-tint));
 }
 
 .productos h1{
@@ -222,7 +182,7 @@
 
 .subFooter{
     padding: 120px 20px 0px 20px;
-    background: var(--pink-tint);
+    background: var(--blue-tint);
     display: flex;
     flex-direction: column;
     gap: 130px;

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Modificado</title>
-    <!-- STYLOS CSS -->
+    <title>Document</title>
+    <!-- STYLOS -->
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/stylos.css">
+    <link rel="stylesheet" href="./css/carrito.css">
 </head>
 <body>
 
     <!-- HEADER -->
-     <header>
+    <header class="header__dark">
         <nav>
             <ul>
                 <li>
@@ -32,140 +32,103 @@
                 </li>
             </ul>
         </nav>
-     </header>
+    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero__tt">
-            <h1>Esenciales de aseo formulados por veterinarios para tu mejor amigo.</h1>
-            <a class="btn__default" href="#">Comprar ahora</a>
-        </div>
+    <!-- FORMULARIO -->
+
+    <section class="section__form">
+        <form 
+            action="">
+            <h1>llena el formulario</h1>
+            <div class="form__flex">
+                <!-- CAMPO NOMBRE -->
+                <label>
+                    <p>Nombres del usuario:</p>
+                    <input 
+                        type="text"
+                        placeholder="Sebastian"
+                        required
+                        maxlength="100"
+                        minlength="4">
+                </label>
+                <!-- CAMPO NOMBRE -->
+                <label>
+                    <p>Apellidos del usuario:</p>
+                    <input 
+                        type="text"
+                        placeholder="Vasquez Echavarria"
+                        required
+                        maxlength="100"
+                        minlength="4">
+                </label>
+            </div>
+            <!-- CAMPO EMAIL -->
+            <label>
+                <p>Correo electronico:</p>
+                <input 
+                    type="email"
+                    placeholder="VasquezEchavarria@gmail.com"
+                    required
+                    maxlength="100"
+                    minlength="4">
+            </label>
+            <!-- CAMPO TELEFONO -->
+            <label>
+                <p>Numero de telefono:</p>
+                <input 
+                    type="number"
+                    placeholder="3017902356"
+                    required
+                    maxlength="100"
+                    minlength="4">
+            </label>
+            <div class="form__flex">
+                <!-- CAMPO CIUDAD -->
+                <label>
+                    <p>Ciudad:</p>
+                    <select>
+                        <option value="">---</option>
+                        <option value="">Medellin</option>
+                        <option value="">Bogota</option>
+                        <option value="">Bucarmanga</option>
+                        <option value="">Cali</option>
+                        <option value="">Bolivia</option>
+                    </select>
+                </label>
+                <!-- CAMPO CIUDAD -->
+                <label>
+                    <p>Producto a comprar:</p>
+                    <select>
+                        <option value="">---</option>
+                        <option value="">Chapoo</option>
+                        <option value="">Acondicionador</option>
+                        <option value="">Pañitos</option>
+                        <option value="">Barnis</option>
+                        <option value="">Lima</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <label>
+                <p>Que animal tienes?</p>
+            </label>
+
+            <div class="form__radio">
+                <label>
+                    <input type="radio">
+                    <h6>Gato</h6>
+                </label>
+                <label>
+                    <input type="radio">
+                    <h6>Perro</h6>
+                </label>
+
+            </div>
+            <input type="submit" value="enviar formulario">
+
+        </form>
     </section>
-
-    <!-- DESCRIPTION -->
-    <section class="description">
-        <!-- SVG -->
-        <svg 
-            class="wavy-desktop" 
-            viewBox="0 0 1280 160" 
-            fill="#92ebff" 
-            xmlns="http://www.w3.org/2000/svg">
-                <path 
-                d="M345.244 65.6872C163.755 61.3347 121.251 -20.7079 -30.4244 5.66307L-33.3494 167.628L1310.26 159.851L1313.19 37.8858C1143.89 6.81792 1074.64 83.1798 945.072 80.0724C815.499 76.965 801.48 19.6125 657.522 16.16C513.563 12.7076 474.207 68.78 345.244 65.6872Z" 
-                fill="#92ebff"></path>
-        </svg>
-        <!-- TITLE -->
-        <div class="description__tt">
-            <h1>Productos no tóxicos</h1>
-            <p>Todas nuestras formulaciones están hechas con los ingredientes más seguros posibles para los perros más sucios. Eso significa que no hay productos químicos agresivos que causan cáncer, y solo ingredientes veganos, libres de crueldad animal y de origen sostenible hechos con ♥︎ en los EE. UU.</p>
-            <a class="btn__default btn__default--blue" href="#">comprar ahora</a>
-        </div>
-
-        <picture>
-            <img src="./img/ingredients-aloe_vera-2_small.png" alt="ingredientes">
-            <img src="./img/ingredients-apple-2_small.png" alt="ingredientes">
-            <img src="./img/ingredients-calendula_small.png" alt="ingredientes">
-            <img src="./img/ingredients-chamomile_small.png" alt="ingredientes">
-            <img src="./img/ingredients-geranium_oil-alt_small.png" alt="ingredientes">
-        </picture>
-    </section>
-
-    <!-- PRODUCTOS -->
-     <section class="productos">
-        <h1>Conozca lo mejor de nuestro espectáculo</h1>
-        <div class="productos__grid">
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/brown_bg_645x.webp" alt="perro">
-                    <img src="./img/disco1_1290x.webp" alt="producto">
-                </picture>
-                <h3>Disco Dog Chapu X Acondicionador</h3>
-                <p>Potencia limpiadora 2 en 1</p>
-                <h3>$18</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/green-blue_bg_1290x.jpg" alt="perro">
-                    <img class="productos__img2" src="./img/disco2.webp" alt="producto">
-                </picture>
-                <h3>Toallitas humedas para perros</h3>
-                <p>Para el perro en movimiento</p>
-                <h3>$11</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/butterpup-thumbnaildesktop_720_1290x.webp" alt="perro">
-                    <img class="productos__img2" src="./img/disco3.webp" alt="producto">
-                </picture>
-                <h3>Balsamo de mantequilla para cachorros</h3>
-                <p>Como balsamo labial pero para patas + nariz</p>
-                <h3>$16</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/green_bg_1290x.webp" alt="perro">
-                    <img src="./img/disco4.webp" alt="producto">
-                </picture>
-                <h3>Humpday Spray</h3>
-                <p>Buenos olores para el mejor perro</p>
-                <h3>$14</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/pink_bg_1290x.webp" alt="perro">
-                    <img src="./img/disco5.webp" alt="producto">
-                </picture>
-                <h3>Limpiador Furboost</h3>
-                <p>Los perros tambien necesitan que les laven la car</p>
-                <h3>$11</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-            <!-- ARTICLE CARD -->
-            <article>
-                <picture>
-                    <img src="./img/bulldog-puppy-web_1290x.webp" alt="perro">
-                    <img src="./img/disco6.webp" alt="producto">
-                </picture>
-                <h3>Puppy Party Chmpu Z Acondicionador</h3>
-                <p>Dale un poco de amor a tu cachorro</p>
-                <h3>$18</h3>
-                <a 
-                    class="btn__default btn__default--blue" 
-                    href="./carrito.html">
-                    Añadir ala cesta
-                </a>
-            </article>
-        </div>
-     </section>
 
     <!-- SUB FOOTER -->
     <section class="subFooter">
@@ -189,7 +152,7 @@
     </section>
 
     <!-- SLIDER -->
-     <section class="slider">
+        <section class="slider">
         <h1>
             Piensaen tu amigo peludo
             <img src="./img/descargar (3).svg" alt="">
@@ -220,7 +183,7 @@
             Piensaen tu amigo peludo
             <img src="./img/descargar (3).svg" alt="">
         </h1>
-     </section>
+        </section>
 
 
     <!-- FOOTER -->

@@ -1,0 +1,134 @@
+.section__form{
+    background-color: var(--pink-tint);
+    padding: 120px 10px 0px 10px;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--yellow-tint);
+    padding: 24px;
+    border-radius: 20px;
+    border-bottom: 8px solid var(--purple-shade);
+}
+
+form h1{
+    margin-bottom: 30px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form label p{
+    font-family: "Protest Riot", sans-serif;
+    margin-bottom: 5px;
+}
+
+.form__flex{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select{
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.134);
+}
+
+.form__radio label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__radio label input{
+    width: 15px;
+    height: 15px;
+}
+
+input[type="submit"]{
+    font-family: "Protest Riot", sans-serif;
+    outline: none;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    background-color: var(--purple-shade);
+    color: white;
+    border-radius: 8px;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form select{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .form__radio label input{
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+
+/* SUBFOOTER */
+
+.subFooter{
+    padding: 120px 20px 0px 20px;
+    background: var(--pink-tint);
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.subFooter ul:nth-child(1){
+    display: flex;
+    gap: 80px;
+}
+
+.subFooter ul li img{
+    width: 35vw;
+    box-shadow: 3px 1px 21px 1px #00000040;
+}
+
+.subFooter ul:nth-child(1) li:nth-child(1) img{
+    transform: rotate(10deg);
+}
+.subFooter ul:nth-child(1) li:nth-child(2) img{
+    transform: rotate(2deg);
+}
+
+.subFooter ul:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+.subFooter ul:nth-child(2) li:nth-child(1) img{
+    transform: rotate(-2deg);
+}
+.subFooter ul:nth-child(2) li:nth-child(2) img{
+    transform: rotate(2deg);
+}
+
+@media screen and (max-width: 650px){
+    .subFooter,
+    .subFooter ul:nth-child(1){
+        gap: 30px;
+    }    
+}
+
