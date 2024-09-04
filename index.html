@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen</title>
+    <title>Examen Modificado</title>
     <!-- STYLOS CSS -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/stylos.css">
@@ -11,100 +11,217 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h2>Este es mi logo</h2>
-        <h1>portal de enseñansa en desarrollo web</h1>
-    </header>
+     <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        Club de belleza <br /> DirtyDog
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="">Nuestra ciencia</a>
+                </li>
+                <li>
+                    <a href="">comprar ahora</a>
+                </li>
+            </ul>
+        </nav>
+     </header>
 
-    <!-- NAV -->
-     <nav>
-        <ul>
-            <li>
-                <a href="#">Inscripciones</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Programas</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Cursos cortos</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Formaciòn empresarial</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Contactenos</a>
-            </li>
-        </ul>
-     </nav>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero__tt">
+            <h1>Esenciales de aseo formulados por veterinarios para tu mejor amigo.</h1>
+            <a class="btn__default" href="#">Comprar ahora</a>
+        </div>
+    </section>
 
+    <!-- DESCRIPTION -->
+    <section class="description">
+        <!-- SVG -->
+        <svg 
+            class="wavy-desktop" 
+            viewBox="0 0 1280 160" 
+            fill="#92ebff" 
+            xmlns="http://www.w3.org/2000/svg">
+                <path 
+                d="M345.244 65.6872C163.755 61.3347 121.251 -20.7079 -30.4244 5.66307L-33.3494 167.628L1310.26 159.851L1313.19 37.8858C1143.89 6.81792 1074.64 83.1798 945.072 80.0724C815.499 76.965 801.48 19.6125 657.522 16.16C513.563 12.7076 474.207 68.78 345.244 65.6872Z" 
+                fill="#92ebff"></path>
+        </svg>
+        <!-- TITLE -->
+        <div class="description__tt">
+            <h1>Productos no tóxicos</h1>
+            <p>Todas nuestras formulaciones están hechas con los ingredientes más seguros posibles para los perros más sucios. Eso significa que no hay productos químicos agresivos que causan cáncer, y solo ingredientes veganos, libres de crueldad animal y de origen sostenible hechos con ♥︎ en los EE. UU.</p>
+            <a class="btn__default btn__default--blue" href="#">comprar ahora</a>
+        </div>
 
-     <!--SECTION DE CURSOS  -->
-     <section class="cursos">
-        <article>
-            <p>Estudia un Diploma y fortalece todo tu potencial en desarrollo de software</p>
-            <a href="#">Descubre màs</a>
-        </article>
+        <picture>
+            <img src="./img/ingredients-aloe_vera-2_small.png" alt="ingredientes">
+            <img src="./img/ingredients-apple-2_small.png" alt="ingredientes">
+            <img src="./img/ingredients-calendula_small.png" alt="ingredientes">
+            <img src="./img/ingredients-chamomile_small.png" alt="ingredientes">
+            <img src="./img/ingredients-geranium_oil-alt_small.png" alt="ingredientes">
+        </picture>
+    </section>
 
-        <!-- CURSOS FLEX -->
-         <article>
-            <p>Cursos destacados</p>
-            <a href="./curso1.html">
-                <img src="./img/brown_bg_645x.webp" alt="perro">
-            </a>
-            <a href="./curso1.html">
-                <img src="./img/green-blue_bg_1290x.jpg" alt="perro">
-            </a>
-            <a href="./curso1.html">
-                <img src="./img/bulldog-puppy-web_1290x.webp" alt="perro">
-            </a>
-         </article>
+    <!-- PRODUCTOS -->
+     <section class="productos">
+        <h1>Conozca lo mejor de nuestro espectáculo</h1>
+        <div class="productos__grid">
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/brown_bg_645x.webp" alt="perro">
+                    <img src="./img/disco1_1290x.webp" alt="producto">
+                </picture>
+                <h3>Disco Dog Chapu X Acondicionador</h3>
+                <p>Potencia limpiadora 2 en 1</p>
+                <h3>$18</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/green-blue_bg_1290x.jpg" alt="perro">
+                    <img class="productos__img2" src="./img/disco2.webp" alt="producto">
+                </picture>
+                <h3>Toallitas humedas para perros</h3>
+                <p>Para el perro en movimiento</p>
+                <h3>$11</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/butterpup-thumbnaildesktop_720_1290x.webp" alt="perro">
+                    <img class="productos__img2" src="./img/disco3.webp" alt="producto">
+                </picture>
+                <h3>Balsamo de mantequilla para cachorros</h3>
+                <p>Como balsamo labial pero para patas + nariz</p>
+                <h3>$16</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/green_bg_1290x.webp" alt="perro">
+                    <img src="./img/disco4.webp" alt="producto">
+                </picture>
+                <h3>Humpday Spray</h3>
+                <p>Buenos olores para el mejor perro</p>
+                <h3>$14</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/pink_bg_1290x.webp" alt="perro">
+                    <img src="./img/disco5.webp" alt="producto">
+                </picture>
+                <h3>Limpiador Furboost</h3>
+                <p>Los perros tambien necesitan que les laven la car</p>
+                <h3>$11</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+            <!-- ARTICLE CARD -->
+            <article>
+                <picture>
+                    <img src="./img/bulldog-puppy-web_1290x.webp" alt="perro">
+                    <img src="./img/disco6.webp" alt="producto">
+                </picture>
+                <h3>Puppy Party Chmpu Z Acondicionador</h3>
+                <p>Dale un poco de amor a tu cachorro</p>
+                <h3>$18</h3>
+                <a 
+                    class="btn__default btn__default--blue" 
+                    href="#">
+                    Añadir ala cesta
+                </a>
+            </article>
+        </div>
      </section>
 
-     <!-- SECTION PROFESORES -->
-     <section class="profesores">
+    <!-- SUB FOOTER -->
+    <section class="subFooter">
+        <ul>
+            <li>
+                <img src="./img/subFooter1.webp" alt="subFooter">
+            </li>
+            <li>
+                <img src="./img/subFooter2.jpg" alt="subFooter">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="./img/disco_dogs_609x.webp" alt="subFooter">
+            </li>
+            <li>
+                <img src="./img/subFooter4.webp" alt="subFooter">
+            </li>
+        </ul>
 
-        <article>
-            <img src="./img/pug_flowers_609x.jpg" alt="">
-            <p>profesores</p>
-        </article>
-
-        <article>
-            <p>Coloque aqui el perfil de los profesores</p>
-        </article>
-
-        <article>
-            <p>Coloque aqui los logros de los preofesores</p>
-        </article>
-      </section>
-
-    <!-- SECTION CURSOS -->
-    <section class="videos">
-        <a href="">
-            <picture>
-                <img src="./img/pink_bg_1290x.webp" alt="perro">
-            </picture>
-            <h2>Curso fundamentos en azure</h2>
-            <p>Recibe + info por whatApp o digilencando formulario</p>
-        </a>
-        <a href="">
-            <picture>
-                <img src="./img/butterpup-thumbnaildesktop_720_1290x.webp" alt="perro">
-            </picture>
-            <h2>Curso desarrolo de app con xamrin</h2>
-            <p>Gratis certificados sfpc*</p>
-        </a>
-        <a href="">
-            <picture>
-                <img src="./img/bundle-thumbnaildesktop_720_1c6a6523-deae-461d-8cbf-f5e30992c1fe_1290x.webp" alt="perro">
-            </picture>
-            <h2>Certificado devops essentials professional</h2>
-            <p>matriculese ahora y reciba hasta 35% de dto*</p>
-        </a>
     </section>
+
+    <!-- SLIDER -->
+     <section class="slider">
+        <h1>
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+            Piensaen tu amigo peludo
+            <img src="./img/descargar (3).svg" alt="">
+        </h1>
+     </section>
+
 
     <!-- FOOTER -->
     <footer>
@@ -146,11 +263,6 @@
                 </p>
             </div>
 
-            <div class="footer__icons--bottom">
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-twitter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" /></svg>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
-            </div>
         </article>
 
     </footer>

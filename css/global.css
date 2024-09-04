@@ -12,8 +12,12 @@
 }
 
 body{
-    color: #333;
-    padding: 0px 100px;
+    color: var(--purple-shade);
+    /* padding: 0px 100px; */
+}
+
+h1{
+    font-size: 4rem;
 }
 
 h1, h2{
@@ -21,11 +25,29 @@ h1, h2{
     letter-spacing: 0px;
 }
 
+h3{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
 a, p{
     font-family: "Quicksand", sans-serif;
     font-size: 19px;
     font-weight: 600;
     color: currentColor;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 18px;
+    }
+    a, p{
+        font-size: 12px;
+    }
+    
 }
 
 :root {
@@ -51,4 +73,140 @@ a, p{
     --white: #fff;
     --white-opaque: rgba(255, 255, 255, 0.8);
     --black: #000;
+}
+
+/* CLASES */
+
+.btn__default{
+    display: inline-flex;
+    padding: 14px 25px;
+    background-color: var(--green-tint);
+    color: var(--purple-shade);
+    text-transform: uppercase;
+    font-family: "Protest Riot", sans-serif;
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+.btn__default:hover{
+    background-color: var(--purple);
+    color: white;
+}
+
+.btn__default--blue{
+    display: inline-flex;
+    font-weight: 100;
+    background-color: var(--purple-shade);
+    color: white;
+}
+
+.btn__default--blue:hover{
+    background-color: var(--purple);
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    z-index: 100;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul:nth-child(2) li a{
+    padding: 0px 20px;
+}
+
+header nav ul:nth-child(1) li a{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+header nav ul:nth-child(2) li:nth-last-child(1) a{
+    font-family: "Protest Riot", sans-serif;
+    background-color: var(--purple-shade);
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+header nav ul:nth-child(2) li:nth-last-child(1) a:hover{
+    background-color: var(--purple);
+}
+
+/* SLIDER SUB FOOTER */
+
+.slider{
+    overflow: hidden;
+    background: var(--pink-tint);
+    padding: 80px 0px;
+}
+
+.slider h1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-wrap: nowrap;
+    animation: slider 50s infinite linear  alternate-reverse;
+}
+
+@keyframes slider {
+    100%{
+        transform: translateX(-400%);
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .slider h1 img{
+        width: 20px;
+    }
+    
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 120px 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #333;
+    color: white;
+}
+
+footer article{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__ctn{
+    padding: 0px 20px;
+    border-left: 1px solid currentColor;
+}
+
+footer article p{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
 }
