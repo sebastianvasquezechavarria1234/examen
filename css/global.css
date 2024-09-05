@@ -259,6 +259,11 @@ footer article a{
     gap: 10px;
 }
 
+footer p{
+    text-align: center;
+    margin-top: 80px;
+}
+
 @media screen and (max-width: 700px){
     .footer__grid{
         grid-template-columns: repeat(2,1fr);
