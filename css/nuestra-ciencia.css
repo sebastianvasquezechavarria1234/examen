@@ -9,13 +9,14 @@
 .hero__tt{
     max-width: 1480px;
     margin: 0 auto;
-    padding: 100px 20px 20px 20px;
+    padding: 170px 20px 20px 20px;
     text-align: center;
 }
 
 .hero__tt h1{
     margin-bottom: 20px;
 }
+
 
 .hero picture{
     display: block;

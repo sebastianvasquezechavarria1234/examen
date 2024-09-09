@@ -129,11 +129,20 @@ header{
 header nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 header nav ul{
     display: flex;
+}
+
+header nav ul:nth-child(1) li a{
+    width: 250px;
+    display: block;
+}
+
+header nav ul:nth-child(2){
+    padding-top: 20px;
 }
 
 header nav ul:nth-child(2) li a{
@@ -163,8 +172,14 @@ header nav ul:nth-child(2) li:nth-last-child(1) a:hover{
 }
 
 @media screen and (max-width: 800px){
+    header{
+        padding: 10px;
+    }
     header nav ul:nth-child(1) li a{
-        font-size: 18px;
+        width: 80px;
+    }
+    header nav ul:nth-child(2){
+        padding: 0px;
     }
     header nav ul:nth-child(2) li a{
         font-size: 9px;
